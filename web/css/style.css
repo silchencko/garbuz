@@ -3,7 +3,16 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'PT Serif', serif;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+body p{
+	margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+body h2{
+	margin-top: 0.7em;
 }
 
 a {
@@ -23,7 +32,7 @@ a {
 }
 nav {
 	margin: auto;
-	width: 800px;
+	width: 900px;
 	height: 40px;
 }
 .topnav {
@@ -49,12 +58,12 @@ main{
 
 .leftmenu__container {
 	background-color: #fcf4e7;
-	width: 210px;
+	margin-top: 15px;
+	width: 18%;
 	padding: 10px;
 	float: left;
 }
 .leftmenu__point {
-	font-size: 1.5em;
 	padding: 5px;
 }
 .leftmenu__point a {
@@ -63,6 +72,43 @@ main{
 }
 .leftmenu__point a:hover {
 	border-left: 2px solid black;
+}
+
+.slidercontainer{
+	margin-left: 300px;
+}
+.slider{
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+}
+.arrow{
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 190px;
+}
+.prev{
+	left: 5px;
+}
+.next{
+	right: 5px;
+}
+.innercontainer{
+	width: 640px;
+	overflow: hidden;
+	display: inline-block;
+}
+.innercontainer ul{
+	width: 9999px;
+  	margin: 0;
+  	padding: 0;
+	list-style: none;
+	transition: margin-left 250ms;
+	font-size: 0;
+}
+.innercontainer ul li{
+	display: inline-block;
 }
 
 .advantages__container {
@@ -88,7 +134,7 @@ main{
 .advantages__item__img {
 	border: 5px solid #f0ccac;
 	border-radius: 30px 0;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 .advantages__item__img:hover {
     opacity: 1;
@@ -98,22 +144,27 @@ main{
 
 .adv_titles {
 	text-align: center; 
-	font-style: italic;
-	margin: 15px;
 }
 .content {
-	margin-left: 160px;
+	width: 70%;
+	padding: 0 7% 20px 3%;
+	float: right;
+}
+.clearfix{
+	clear: both;
 }
 .adv__first_img {
 	float: left;
-	margin: 15px;
-	margin-left: 20px;
+	margin: 15px 15px 15px 0;
 }
 
 table {
-	width: 600px;
+	width: 80%;
 	border: 3px solid beige;
 	margin: auto;
+}
+caption{
+	color: #393242;
 }
 
 tr:nth-child(2n+3):hover, tr:nth-child(2n):hover {
@@ -130,31 +181,50 @@ td {
 	cursor: default;
 }
 
-.aboutus_title{
+.adv_titles{
 	text-align: center;
+	color: #393242;
 }
-.aboutus__text {
-	font-size: 18px;
-	width: 85%;
+.adv__text {
+	width: 100%;
 	margin: auto;
 	text-align: justify;
+	margin-top: 1em;
+    margin-bottom: 1em;
 }
-.aboutus__img {
+.adv__text strong{
+	color: #393242;
+}
+.adv__text__list li{
+	margin-left: 80px;
+	list-style-type: disc;
+}
+.adv__text__list dt{
+	color: #393242;
+	margin: 0 0 1em 0px;
+	text-align: justify; 
+}
+.adv__text__list dd{
+	margin: 0 0 1em 100px;
+	text-align: justify; 
+	/*font-style: italic;*/
+}
+.adv__img {
 	margin: 2px;
 }
-.aboutus__gallery {
-	width: 65%;
+.adv__gallery {
+	width: 100%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.aboutus__photo__item {
+.adv__photo__item {
 	width: 40%;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.aboutus__photo__item img {
+.adv__photo__item img {
     box-sizing: border-box;
 }
 
