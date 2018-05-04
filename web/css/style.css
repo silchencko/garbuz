@@ -59,7 +59,7 @@ main{
 .leftmenu__container {
 	background-color: #fcf4e7;
 	margin-top: 15px;
-	width: 18%;
+	width: 170px;
 	padding: 10px;
 	float: left;
 }
@@ -78,8 +78,7 @@ main{
 	margin-left: 300px;
 }
 .slider{
-	width: 800px;
-	height: 400px;
+	max-width: 800px;
 	margin: 0 auto;
 }
 .arrow{
@@ -95,7 +94,7 @@ main{
 	right: 5px;
 }
 .innercontainer{
-	width: 640px;
+	max-width: 640px;
 	overflow: hidden;
 	display: inline-block;
 }
@@ -110,6 +109,7 @@ main{
 .innercontainer ul li{
 	display: inline-block;
 }
+
 
 .advantages__container {
 	display: flex;
@@ -312,10 +312,6 @@ footer nav a:hover {
 	}
 	.advantages__item {
 	width: 35%;
-    }
-    footer {
-	position: static;
-	margin-top: -114px;
     }
 }
 @media screen and (max-width: 420px) {
